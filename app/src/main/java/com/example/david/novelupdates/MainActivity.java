@@ -25,6 +25,7 @@ public class MainActivity extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+
 //        FrameLayout frameLayoutBalance = (FrameLayout) findViewById(R.id.frame);
 //        frameLayoutBalance.setBackgroundColor(Color.parseColor("#00aacc"));
 
@@ -99,7 +100,7 @@ public class MainActivity extends AppCompatActivity
         } else if (id == R.id.nav_Bookmark) {
             fragment = new BookmarkFragment();
         } else if (id == R.id.nav_Search) {
-            fragment = new AppBarMainFragment();
+            fragment = new SearchFragment();
         } else if (id == R.id.nav_share) {
             fragment = new AppBarMainFragment();
         } else {

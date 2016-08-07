@@ -4,16 +4,96 @@
     android:layout_height="match_parent">
 
 
-    <Button
+
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="INBOX"
-        android:padding="8dp"
-        android:textColor="#fff"
-        android:background="@color/colorPrimary"
-        android:textSize="28sp"
-        android:id="@+id/Inbox"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true"/>
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Bookmarks"
+        android:id="@+id/textView3"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="41dp" />
 
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/textView3"
+        android:id="@+id/LinearLayout1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="         Title"
+            android:id="@+id/textView4"
+            android:layout_weight="0.53" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Now/Later"
+            android:id="@+id/textView5"
+            android:layout_weight="0.41" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Notifications"
+            android:id="@+id/textView6"
+            android:layout_weight="0.20" />
+
+
+    </LinearLayout>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@id/LinearLayout1"
+        tools:context=".ListActivity"
+        android:weightSum="1">
+
+        <!--<ListView-->
+            <!--android:id="@+id/mobile_list"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="173dp"-->
+            <!--android:layout_weight="0.96">-->
+        <!--</ListView>-->
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.11">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Against The Gods"
+                android:id="@+id/textView7"
+                android:layout_weight="0.03"
+                android:textSize="15dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Now"
+                android:id="@+id/textView9"
+                android:layout_weight="0.03" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:text="Now"
+                android:id="@+id/textView8" />
+        </LinearLayout>
+
+    </LinearLayout>
 </RelativeLayout>
